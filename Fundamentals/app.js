@@ -161,34 +161,34 @@ console.clear();
 //=====================================Functions ==============================================
 
 
-  var todayDate = new Date();
+  // var todayDate = new Date();
  
-  var month = (todayDate.getMonth() + 1); 
+  // var month = (todayDate.getMonth() + 1); 
   
-  var year = todayDate.getUTCFullYear(); 
+  // var year = todayDate.getUTCFullYear(); 
 
-  var tdate = todayDate.getDate() - 7; 
+  // var tdate = todayDate.getDate() - 7; 
  
 
-  if(tdate < 0)
-  {
-    month = todayDate.getMonth() 
-    var lastDay = new Date(year, month + 1, 0).getDate();
+  // if(tdate < 0)
+  // {
+  //   month = todayDate.getMonth() 
+  //   var lastDay = new Date(year, month + 1, 0).getDate();
 
-    tdate = lastDay - Math.abs(tdate)
-  }
-  console.log(lastDay);
-  console.log(tdate);
+  //   tdate = lastDay - Math.abs(tdate)
+  // }
+  // console.log(lastDay);
+  // console.log(tdate);
 
-  if(month < 10){
-   month = "0" + month 
-  }
-  if(tdate < 10){
-    tdate = "0" + tdate;
-  }
-  var maxDate = year + "-" + month + "-" + tdate;
-  document.getElementById("demo").setAttribute("min", maxDate);
-  console.log(maxDate);
+  // if(month < 10){
+  //  month = "0" + month 
+  // }
+  // if(tdate < 10){
+  //   tdate = "0" + tdate;
+  // }
+  // var maxDate = year + "-" + month + "-" + tdate;
+  // document.getElementById("demo").setAttribute("min", maxDate);
+  // console.log(maxDate);
 
 // var date = new Date();
 // date.setDate(date.getDate() - 2);
@@ -197,3 +197,130 @@ console.clear();
 // console.log(finalDate);
 
 // document.getElementById("demo").setAttribute("min", finalDate)
+
+
+
+//=====================================If Statements ==============================================
+
+// const id = 100;
+
+
+// if(id == 100){
+//   console.log('blaaaa blahhhh')
+// }
+// else{
+//   console.log('This is it')
+
+//   //compares the value and the type
+// if(id == 100){
+//   console.log('blaaaa blahhhh')
+// }
+// else{
+//   console.log('This is it')
+// }
+// }
+
+// if(typeof id !== `undefined`){
+//   console.log(`The Id is ${id}`)
+// }
+// else{
+//   console.log(`No Id`)
+// }
+
+// if(id >= 100){
+//   console.log('Correct')
+// }
+// else{
+//   console.log('Incorrect')
+// }
+
+//=====================================Switch ==============================================
+// const colour = 'red';
+
+// switch(colour){
+//   case 'red':
+//     console.log('The colour is red')
+//     break;
+//   case 'blue':
+//     console.log('The clolour is blue')
+//     break;
+//     default:
+//       console.log('I dont know what the colour is')
+
+// }
+
+// //days of the week
+
+// let day;
+
+// switch(new Date().getDay()){
+//    case 0:
+//      console.log('Today is Sunday')
+//      break;
+//      case 1:
+//       console.log('Today is Monday')
+//       break;
+//       case 2:
+//         console.log('Today is Tuesday')
+//         break;
+//         case 3:
+//           console.log('Today is Wednesday')
+//           break;
+//           case 4:
+//             console.log('Today is Thursday')
+//             break;
+//             case 5:
+//               console.log('Today is Friday')
+//               break;
+//               case 6:
+//                 console.log('Today is Saturday')
+//                 break;
+// }
+
+//=================================Functions===============================
+
+// function greet(){
+//  return "we are greeting this person"
+// }
+
+// console.log(greet());
+
+// function greet(firstName){
+
+//   return firstName
+// }
+
+// console.log('Hello '+ greet("Tshepiso"))
+
+//function Expression
+
+// const square = function(x){
+// return x*x
+// }
+
+// console.log(square(3));
+
+//Immediately Invokable function expression
+
+// (function(){
+//   console.log('IIFE is running here....')
+// })();
+
+// (function(name){
+//   console.log('Ola bra '+ name)
+// })('Ike');
+
+//propoerty methods
+// const todo ={
+//   add: function(){
+//     console.log('Something is done here....');
+//   }
+// }
+
+// todo.add();
+
+//===========================Loops==================
+
+// for(let i = 0; i < 10 ; i++){
+//   console.log(i)
+// }
